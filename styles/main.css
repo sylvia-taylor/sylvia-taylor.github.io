@@ -1,0 +1,87 @@
+/*will update styles when I am confident I know what I'm doing*/
+body{
+  background-image: url(images/header-img.jpg);
+  background-color: slategray;}
+
+/*used for the welcome*/
+h1 {text-align: center;
+  font-family:arial, monospace;
+  background-color: azure;}
+
+/*used for the my study journey*/  
+.header-text{
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  font-size: 50px;}
+
+/*used for the word 'study and Blog'*/
+span{
+  font-size: 50px;
+  font-style: italic;}
+ 
+  /*used for paragraphs*/
+ #p-background {
+  background-color: lightsteelblue;
+  padding: 1px;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;}
+
+  /*flexbox*/
+.container {
+  background-color: azure;
+  margin: 0px;
+  padding: 10px;
+  height: 200px;
+  width: auto;
+  display: flex;
+  flex-flow: wrap; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+/*flexbox items*/
+.spr1, .spr2, .spr3, .spr4, .spr5 
+{ background-color: lightsteelblue;
+  font-size: 200%;
+  width: 50px;
+  height: 80px;
+  flex-grow: 1; 
+  flex-shrink: 1;
+  /* border: solid;
+  border-color: grey; */
+  border-radius: 10%;
+  text-align: center;
+  padding: 5px;
+  list-style-type: none;}
+
+/*media queries for the different screen sizes*/
+@media (max-width: 768px) {
+  h2, span {
+    font-size: 35px;}
+    .spr1, .spr2, .spr3, .spr4, .spr5 {
+      font-size: 150%;
+    } 
+    h3 {font-size: 30px;}} 
+
+  @media (max-width: 320px) {
+    h1, h2, span {
+      font-size: 30px;}
+    .spr1, .spr2, .spr3, .spr4, .spr5 {
+      font-size: 120%;
+    }
+    h3 {font-size: 20px;}}
+
+  @media (min-width: 769px) {
+    h1, h2, span {font-size: 50px;
+    font-stretch: expanded;} 
+    h3 {font-size: 40px;}
+    #p-background{font-size: 30px;}
+    }
+
+
+
