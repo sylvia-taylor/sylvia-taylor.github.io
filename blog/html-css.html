@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+
+
+  <title>Inline vs Inline Block</title>
+</head>
+<body>
+  <hr>
+  <div class="menu">
+    <a href="../index.html">Home</a> 
+  </div>
+  <hr>
+  <h1>Inline vs Inline Blocks</h1>
+  
+  <!--<div class="header-text">-->
+    <h2>What do these display properties mean?</h2>
+    
+    <p>With different screen sizes, visual presentation is important. The two display properties: Inline and Inline-block, have
+      different visual appearances on the different screen sizes. 
+      On smaller screens like a cell phone, the Inline property tends to split the contents and squash them together.
+      The Inline-block property keeps the contents on smaller screens as they appear on a larger screens. Instead of squashing the contents
+      Inline-block stacks the contents on top of each other. 
+    </p>
+    <br>
+    <p><em>See below for examples.</em></p>
+    <p><strong>I have used the exact same properties and values in both examples.</strong>
+      <p><strong>Increase and decrease the screen size to see the differences.</strong></p>
+
+  <div class="column" style="background-color: lightgray;">
+    <h3>Inline</h3>
+    <ul>
+      <li>Take only as much space as they need</li>
+      <li>Displayed side by side</li>
+      <li>Does not accept width or height properties, and top-bottom margin</li>
+    </ul>
+    <p><strong>Example - display: inline;</strong></p>
+    <ul class="inline"><!--inline class-->
+      <li>Example 1</li>
+      <li>Example 2</li>
+      <li>Example 3</li>
+      <li>Example 4</li>
+    </ul>
+    <br>
+    <p><strong>Screenshot of inline code</strong></p>
+    <img src="../images/blog1images/inline.jpg" alt="InlineBlock" class="responsive"></li>
+
+  <!-- inline-block column contents -->
+  </div>
+  <div class="column" style="background-color: rgb(132, 123, 123)">
+    <h3>Inline-block</h3>
+    <ul>
+      <li>Accepts padding settings to increase space</li>
+      <li>Displayed side by side</li>
+      <li>Accepts width or height properties</li>
+    </ul>
+
+    <p><strong>Example - display: inline-block;</strong></p>
+    <ul class="inlineblock"><!--inlineblock class-->
+      <li>Example 1</li>
+      <li>Example 2</li>
+      <li>Example 3</li>
+      <li>Example 4</li>
+    </ul>
+    <br>
+    <p><strong>Screenshot of inline-block code</strong></p>
+    <img src="../images/blog1images/inlineblock.jpg" alt="InlineBlock" class="responsive">
+  </div>
+  <hr>
+
+</body>
+
+<!--Research ONE of the following topics:
+
+What is the difference between Margin, Border, and Padding?
+What are the best practices associated with using classes vs. ids?
+What are the differences between relative, absolute, and fixed positioning?
+What does it mean to display inline vs inline blocks? -->
+
+  </html>

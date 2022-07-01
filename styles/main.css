@@ -1,12 +1,25 @@
 /*will update styles when I am confident I know what I'm doing*/
 body{
-  background-image: url(images/header-img.jpg);
+  background-image: url(../images/header-img.jpg);
   background-color: slategray;}
 
 /*used for the welcome*/
 h1 {text-align: center;
   font-family:arial, monospace;
   background-color: azure;}
+
+h2 {text-align: center;
+    background-color: slategray;
+    margin: 0em;}
+
+h4 {text-align: center;
+background-color: azure;}
+
+p {text-align: center;
+  font-size: 18px;
+  background-color: azure;
+  margin: 0em;
+  }
 
 /*used for the my study journey*/  
 .header-text{
@@ -38,32 +51,31 @@ span{
   height: 200px;
   width: auto;
   display: flex;
-  flex-flow: wrap; 
+  flex-wrap: wrap; 
   align-items: center;
   justify-content: center;
-  gap: 0.2rem;
+  gap: 0.2rem; 
 }
 
 /*flexbox items*/
-.spr1, .spr2, .spr3, .spr4, .spr5 
+.blog1, .blog2, .blog3, .blog4, .blog5 
 { background-color: lightsteelblue;
   font-size: 200%;
   width: 50px;
   height: 80px;
   flex-grow: 1; 
   flex-shrink: 1;
-  /* border: solid;
-  border-color: grey; */
   border-radius: 10%;
   text-align: center;
   padding: 5px;
-  list-style-type: none;}
+  list-style-type: none;
+} 
 
 /*media queries for the different screen sizes*/
 @media (max-width: 768px) {
   h2, span {
     font-size: 35px;}
-    .spr1, .spr2, .spr3, .spr4, .spr5 {
+    .blog1, .blog2, .blog3, .blog4, .blog5 {
       font-size: 150%;
     } 
     h3 {font-size: 30px;}} 
@@ -71,7 +83,7 @@ span{
   @media (max-width: 320px) {
     h1, h2, span {
       font-size: 30px;}
-    .spr1, .spr2, .spr3, .spr4, .spr5 {
+      .blog1, .blog2, .blog3, .blog4, .blog5 {
       font-size: 120%;
     }
     h3 {font-size: 20px;}}
@@ -82,6 +94,81 @@ span{
     h3 {font-size: 40px;}
     #p-background{font-size: 30px;}
     }
+
+      /*USED FOR INLINE & INLINE BLOCK BLOG  */
+      /* Add a black background color to the top navigation */
+.menu {
+  background-color: rgb(66, 135, 214);
+  width:100px;
+  position: relative;
+}
+
+/* Styles the link inside the navigation bar */
+.menu a {
+  color: #f2f2f2;
+  padding: 11px 26px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* Colour changes when you hover over link */
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* formatting for the inline examples */
+.inline {
+  list-style-type: none;
+  text-align: center;
+  background-color: lightcoral;
+}
+
+.inline li {
+  display: inline;
+  padding: 15px;
+  font-size: 20px;
+  border: solid;
+}
+
+/* formatting for the inlineblock examples */
+.inlineblock {
+  list-style-type: none;
+  text-align: center;
+  background-color: lightcoral; 
+}
+
+.inlineblock li {
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  border: solid; 
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* need this for the display of the columns */
+*{box-sizing: border-box;} 
+
+
+.column {
+  border: solid;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto; /* stretch in height to accommodate contents */
+}
+
+/* puts the first column on top of another when screensize is 425px*/
+@media screen and (max-width: 425px) {
+  .column {
+    width: 100%;
+  }
+}
 
 
 
