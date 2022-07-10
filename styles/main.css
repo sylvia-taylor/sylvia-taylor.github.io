@@ -7,11 +7,11 @@ body{
   text-align: center;
   }
 
-/*used for the welcome*/
 h1 {text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: azure;}
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5px 5px 5px 5px;
+    background-color: azure;}
 
 h2 {text-align: center;
     background-color: slategray;
@@ -22,15 +22,14 @@ h3{text-align: center;}
 h4 {text-align: center;
     background-color: azure;
     margin: 0em;
-  }
-
-
-/* p {text-align: center;
-  padding: 0px;
-  } */
+    }
 
 em{
   color: black;
+}
+
+li{
+  list-style-type:  none;
 }
 
 footer{
@@ -205,11 +204,11 @@ span{
   margin-right: 10%;
   margin-bottom: auto;
   background-color: azure; 
-  padding: 0 5px 0 5px;
-}
+  padding: 5px 5px 5px 5px;
+  }
 
 .imgContainer{
-  text-align: center;
+    text-align: center;
   padding: 0 10px 0 10px;
 }
 
