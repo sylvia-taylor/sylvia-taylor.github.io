@@ -1,25 +1,46 @@
 /*will update styles when I am confident I know what I'm doing*/
+
 body{
   background-image: url(../images/header-img.jpg);
-  background-color: slategray;}
+  background-color: lightblue;
+  font-family: 'Caveat', monospace;
+  text-align: center;
+  }
 
 /*used for the welcome*/
 h1 {text-align: center;
-  font-family:arial, monospace;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: azure;}
 
 h2 {text-align: center;
     background-color: slategray;
-    margin: 0em;}
+    }
+
+h3{text-align: center;}
 
 h4 {text-align: center;
-background-color: azure;}
-
-p {text-align: center;
-  font-size: 18px;
-  background-color: azure;
-  margin: 0em;
+    background-color: azure;
+    margin: 0em;
   }
+
+
+/* p {text-align: center;
+  padding: 0px;
+  } */
+
+em{
+  color: black;
+}
+
+footer{
+  text-align: center;
+  padding: 10px 0 10px 0;
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
+  background-color: rgb(66, 135, 214);
+}
+
 
 /*used for the my study journey*/  
 .header-text{
@@ -178,5 +199,32 @@ span{
   }
 }
 
+/* below code used for javascript-dom page */
+.mColumn {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: auto;
+  background-color: azure; 
+  padding: 0 5px 0 5px;
+}
 
+.imgContainer{
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
 
+figure{
+  display: inline-table; /*having 2 images, inline-table allowed the caption text to wrap based on image size. so images would be next to each other of bigger screens*/
+  padding: 0 0 0 0;
+}
+
+figcaption{
+  display: table-caption; /*displays the caption within the image width*/
+  caption-side: bottom; /*specifies the placement of the table-caption. as top is default*/
+  font-variant: small-caps;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin: 0 0 0 0;
+  
+}
