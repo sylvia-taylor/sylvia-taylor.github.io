@@ -5,39 +5,88 @@ body{
   background-color: lightblue;
   font-family: 'Caveat', monospace;
   text-align: center;
-  }
+}
 
-h1 {text-align: center;
+/* used for images before menu bar */
+/* will not affect other <img src> */
+.img1{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+h1 {
+    text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     padding: 5px 5px 5px 5px;
-    background-color: azure;}
+    background-color: azure;
+ }
 
 h2 {text-align: center;
     background-color: slategray;
-    }
+}
 
-h3{text-align: center;}
+h3 {text-align: center;}
 
 h4 {text-align: center;
     background-color: azure;
     margin: 0em;
-    }
+}
 
-em{
+/* to change how the links are on homepage */
+/* still need to vertical center the links within the box*/
+
+a.dif-link:link{
+text-decoration: none;
+color: black;
+}
+a.dif-link:visited{
+  text-decoration: none;
+  color: black;
+}
+a.dif-link:hover{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+a.dif-link:active{
+  text-decoration: none;
   color: black;
 }
 
-li{
+em {color: black;}
+
+.ul-list{
   list-style-type:  none;
-}
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  /* text-align: justify; */
+  color: rgb(139, 97, 25);
+  }
 
 footer{
   text-align: center;
-  padding: 10px 0 10px 0;
+  padding: 10px 5px 10px 5px;
   /* margin-left: 10%; */
   /* margin-right: 10%; */
   background-color: rgb(66, 135, 214);
+}
+
+/* Text inside a circle */
+.textBox{
+  float: relative;
+  border: transparent;
+  background: radial-gradient(circle, rgba(236,187,70,1) 11%, rgba(228,166,65,1) 30%, rgba(222,145,60,1) 50%, rgba(151,116,70,1) 100%);
+  width: auto;
+  height: max-content;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 50%;
+  font-size: larger;
+  padding: 1% 1% 1% 1%;
 }
 
 
@@ -48,75 +97,114 @@ footer{
   padding: 5px;
   background-color: black;
   color: white;
-  font-size: 50px;}
+  font-size: 50px;
+}
 
-/*used for the word 'study and Blog'*/
+/*used for the word 'study and Blog' on home page*/
 span{
   font-size: 50px;
-  font-style: italic;}
+  font-style: italic;
+}
  
   /*used for paragraphs*/
- #p-background {
+#p-background {
   background-color: lightsteelblue;
   padding: 1px;
   text-align: center;
-  font-size: 18px;
-  font-style: italic;}
+  font-size: x-large;
+  font-style: italic;
+  font-weight: bolder;
+}
 
   /*flexbox*/
 .container {
   background-color: azure;
   margin: 0px;
-  padding: 10px;
-  height: 200px;
+  padding: 10px 10px 10px 10px;
+  height: 100%;
   width: auto;
   display: flex;
   flex-wrap: wrap; 
   align-items: center;
   justify-content: center;
-  gap: 0.2rem; 
+  gap: 1rem; 
 }
 
 /*flexbox items*/
-.blog1, .blog2, .blog3, .blog4, .blog5 
-{ background-color: lightsteelblue;
-  font-size: 200%;
-  width: 50px;
-  height: 80px;
+.blog1, .blog2, .blog3, .blog4, .blog5 { 
+  background-color: lightsteelblue;
+  
+  width: 150px;
+  height: 150px;
   flex-grow: 1; 
   flex-shrink: 1;
   border-radius: 10%;
   text-align: center;
-  padding: 5px;
+  vertical-align: middle;
+  padding: 10px 10px 10px 10px;
   list-style-type: none;
+  
+  border-style: groove;
 } 
 
 /*media queries for the different screen sizes*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   h2, span {
     font-size: 35px;}
-    .blog1, .blog2, .blog3, .blog4, .blog5 {
-      font-size: 150%;
-    } 
-    h3 {font-size: 30px;}} 
 
-  @media (max-width: 320px) {
-    h1, h2, span {
-      font-size: 30px;}
-      .blog1, .blog2, .blog3, .blog4, .blog5 {
-      font-size: 120%;
+  .blog1, .blog2, .blog3, .blog4, .blog5 {
+    font-size: 150%;}
+
+  h3 {font-size: 30px;}
+
+  .textBox{
+    padding: 2% 4% 2% 4%;
     }
-    h3 {font-size: 20px;}}
+} 
 
-  @media (min-width: 769px) {
-    h1, h2, span {font-size: 50px;
-    font-stretch: expanded;} 
-    h3 {font-size: 40px;}
-    #p-background{font-size: 30px;}
+@media only screen and (max-width: 320px) {
+  h1, h2, span {
+    font-size: 30px;}
+
+  .blog1, .blog2, .blog3, .blog4, .blog5 {
+    font-size: 120%;}
+
+  h3 {font-size: 20px;}
+  
+  .mColumn {
+    margin-left: 0%;
+    margin-right: 0%;
     }
+    
+  .textBox{
+    height: auto;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: smaller;
+    padding: 6% 7% 6% 7%;
+  }
+}
 
-      /*USED FOR INLINE & INLINE BLOCK BLOG  */
-      /* Add a black background color to the top navigation */
+@media only screen and (min-width: 769px) {
+  h1, h2, span {font-size: 50px;
+  font-stretch: expanded;}
+
+  h3 {font-size: 40px;}
+
+  #p-background{font-size: 30px;}
+
+  .blog1, .blog2, .blog3, .blog4, .blog5 {
+    font-size: 180%;}
+
+    .textBox{
+      margin-left: 30%;
+      margin-right: 30%;
+      padding: 2% 1% 2% 1%;
+    }
+}
+
+  /*USED FOR INLINE & INLINE BLOCK BLOG  */
+  /* Add a black background color to the top navigation */
 .menu {
   background-color: rgb(66, 135, 214);
   width:auto;
@@ -166,6 +254,7 @@ span{
   border: solid; 
 }
 
+/* used for 2 columns. Inline vs Inline-block */
 .responsive {
   max-width: 100%;
   height: auto;
@@ -173,7 +262,6 @@ span{
 
 /* need this for the display of the columns */
 *{box-sizing: border-box;} 
-
 
 .column {
   border: solid;
@@ -184,38 +272,40 @@ span{
 }
 
 .single-column {
-  border: solid;
-  float: left;
-  width: 100%;
-  padding: 10px;
+  /* border: solid; */
+  float: relative;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  padding: 5px 5px 5px 5px;
   height: auto; /* stretch in height to accommodate contents */
-}
+  background-color: bisque;
+ }
 
+/* Used for 2 column page */
 /* puts the first column on top of another when screensize is 425px*/
 @media screen and (max-width: 425px) {
   .column {
-    width: 100%;
+    width: 100%;}
   }
-}
 
-/* below code used for javascript-dom page */
+/* below code used for body of page to be placed centered */
 .mColumn {
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: auto;
   background-color: azure; 
-  padding: 5px 5px 5px 5px;
+  padding: 20px 20px 20px 20px;
   }
 
 .imgContainer{
-    text-align: center;
+  text-align: center;
   padding: 0 10px 0 10px;
-}
+  }
 
 figure{
   display: inline-table; /*having 2 images, inline-table allowed the caption text to wrap based on image size. so images would be next to each other of bigger screens*/
   padding: 0 0 0 0;
-}
+  }
 
 figcaption{
   display: table-caption; /*displays the caption within the image width*/
@@ -225,5 +315,4 @@ figcaption{
   color: red;
   text-align: center;
   margin: 0 0 0 0;
-  
 }
