@@ -16,21 +16,37 @@ body{
   object-position: center;
 }
 
-h1 {
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 5px 5px 5px 5px;
-    background-color: azure;
- }
-
-h2 {text-align: center;
-    background-color: slategray;
+/* for images that are too big */
+.img2{
+  width: 40%;
+  object-fit: cover;
+  object-position: cover;
 }
 
-h4 {text-align: center;
-    background-color: azure;
-    margin: 0em;
+/* for images that are small. and to keep keep relative to screen size */
+.img3{
+  width: 90%;
+  object-fit: cover;
+  object-position: cover;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5px 5px 5px 5px;
+  background-color: azure;
+ }
+
+h2 {
+  text-align: center;
+  background-color: slategray;
+}
+
+h4 {
+  text-align: center;
+  background-color: azure;
+  margin: 0em;
 }
 
 /* to change how the links are on homepage */
@@ -60,15 +76,18 @@ em {color: black;}
   list-style-type:  none;
   margin: 0;
   padding: 10px 10px 10px 10px;
-  /* text-align: justify; */
   color: rgb(139, 97, 25);
   }
+
+.ul-list1{
+  list-style-type:  none;
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+}
 
 footer{
   text-align: center;
   padding: 10px 5px 10px 5px;
-  /* margin-left: 10%; */
-  /* margin-right: 10%; */
   background-color: rgb(66, 135, 214);
 }
 
@@ -91,7 +110,6 @@ footer{
 /*used for the my study journey*/  
 .header-text{
   position: relative;
-  /* text-align: center; */
   padding: 5px;
   background-color: black;
   color: white;
@@ -321,3 +339,19 @@ figcaption{
   /* background-color: rgb(66, 135, 214); */
   /* box-shadow: 0px 0px 2px 2px rgb(0,0,0); */
 }
+
+/* to set the table and table data space */
+table{
+  border: solid;
+  padding: 5px 2px 5px 2px;
+  background-color: rgb(234, 217, 160);
+}
+
+td{
+  border: solid;
+  background-color: rgb(238, 242, 199);
+  padding: 10px 5px 10px 5px
+}
+
+
+
