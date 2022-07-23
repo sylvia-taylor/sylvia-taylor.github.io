@@ -28,8 +28,6 @@ h2 {text-align: center;
     background-color: slategray;
 }
 
-h3 {text-align: center;}
-
 h4 {text-align: center;
     background-color: azure;
     margin: 0em;
@@ -37,7 +35,6 @@ h4 {text-align: center;
 
 /* to change how the links are on homepage */
 /* still need to vertical center the links within the box*/
-
 a.dif-link:link{
 text-decoration: none;
 color: black;
@@ -48,8 +45,9 @@ a.dif-link:visited{
 }
 a.dif-link:hover{
   text-decoration: none;
-  color: white;
-  display: block;
+  color: black;
+  border: 5% solid white;
+  background-color: white;
 }
 a.dif-link:active{
   text-decoration: none;
@@ -93,12 +91,11 @@ footer{
 /*used for the my study journey*/  
 .header-text{
   position: relative;
-  text-align: center;
+  /* text-align: center; */
   padding: 5px;
   background-color: black;
   color: white;
-  font-size: 50px;
-}
+ }
 
 /*used for the word 'study and Blog' on home page*/
 span{
@@ -118,23 +115,23 @@ span{
 
   /*flexbox*/
 .container {
+  display: flex;
+  flex-wrap: wrap; 
   background-color: azure;
   margin: 0px;
   padding: 10px 10px 10px 10px;
   height: 100%;
   width: auto;
-  display: flex;
-  flex-wrap: wrap; 
   align-items: center;
   justify-content: center;
   gap: 1rem; 
 }
 
 /*flexbox items*/
-.blog1, .blog2, .blog3, .blog4, .blog5 { 
+.blog { 
   background-color: lightsteelblue;
   
-  width: 150px;
+  width: 155px;
   height: 150px;
   flex-grow: 1; 
   flex-shrink: 1;
@@ -152,7 +149,7 @@ span{
   h2, span {
     font-size: 35px;}
 
-  .blog1, .blog2, .blog3, .blog4, .blog5 {
+  .blog {
     font-size: 150%;}
 
   h3 {font-size: 30px;}
@@ -166,7 +163,7 @@ span{
   h1, h2, span {
     font-size: 30px;}
 
-  .blog1, .blog2, .blog3, .blog4, .blog5 {
+  .blog {
     font-size: 120%;}
 
   h3 {font-size: 20px;}
@@ -193,14 +190,14 @@ span{
 
   #p-background{font-size: 30px;}
 
-  .blog1, .blog2, .blog3, .blog4, .blog5 {
-    font-size: 180%;}
+  .blog {
+    font-size: 160%;}
 
-    .textBox{
-      margin-left: 30%;
-      margin-right: 30%;
-      padding: 2% 1% 2% 1%;
-    }
+  .textBox{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 2% 1% 2% 1%;
+  }
 }
 
   /*USED FOR INLINE & INLINE BLOCK BLOG  */
@@ -315,4 +312,12 @@ figcaption{
   color: red;
   text-align: center;
   margin: 0 0 0 0;
+}
+
+/* Buttons to view and remove JavaScript */
+#btnViewJS, #btnRemoveJS{
+  padding: 10px 20px;
+  margin: 5px;
+  /* background-color: rgb(66, 135, 214); */
+  /* box-shadow: 0px 0px 2px 2px rgb(0,0,0); */
 }
